@@ -7,9 +7,9 @@ const jwt = require('jsonwebtoken');
 
 const app = express()
 app.use(cors({
-  origin: 'https://blog-ashy-sigma-92.vercel.app', 
+  origin: ['https://blog-client-o9detk0bb-sourabhs-projects-8f523db4.vercel.app/'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  credentials: true
 }));
 app.use(express.json())
 
